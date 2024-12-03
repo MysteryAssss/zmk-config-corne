@@ -4,9 +4,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &led_strip {
-//  chain-length = <0>;
   chain-length = <27>;
-//  21 backlight + 6 glowlight
 };
 
 
@@ -50,6 +48,10 @@
     Capslock {
       bindings = <&kp CLCK>;
       key-positions = <5 6>;
+    };
+
+    chosen {
+        zmk,underglow = &led_strip;
     };
   };
 
