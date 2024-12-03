@@ -49,10 +49,6 @@
       bindings = <&kp CLCK>;
       key-positions = <5 6>;
     };
-
-    chosen {
-        zmk,underglow = &led_strip;
-    };
   };
 
   macros {
